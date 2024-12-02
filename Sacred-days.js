@@ -25,3 +25,5 @@ function blackFriday(year) {
   const blackFriday = (lastDayOfNov > 5 ? 35 : 28) - lastDayOfNov;
   return blackFriday;
 }
+
+// or
