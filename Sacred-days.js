@@ -27,3 +27,14 @@ function blackFriday(year) {
 }
 
 // or
+
+function blackFriday(year){
+  let fridays = [];
+  for(let i = 0; i < 30; i++){
+    let c = new Date(year,10,i+1);
+    if(c.getDay() === 4){
+        fridays.push(c);
+    }
+  }
+  return fridays[3].getDate() +1;
+  }
