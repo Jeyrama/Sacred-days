@@ -19,3 +19,9 @@ Your function only needs to support years after 1752*.
 
 
 // Solution
+
+function blackFriday(year) {
+  const lastDayOfNov = new Date(year, 10, 30).getDay();
+  const blackFriday = (lastDayOfNov > 5 ? 35 : 28) - lastDayOfNov;
+  return blackFriday;
+}
